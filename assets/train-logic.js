@@ -60,9 +60,11 @@ $("#submit-btn").on("click", function(event) {
     "HH:mm"
   );
   //.format("X");
-  var trainFrequency = parseInt$("#frequency-input")
-    .val()
-    .trim();
+  var trainFrequency = parseInt(
+    $("#frequency-input")
+      .val()
+      .trim()
+  );
 
   if (trainName.length === 0) {
     trainName = "";
